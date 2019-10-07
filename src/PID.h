@@ -30,6 +30,13 @@ class PID {
    * @output The total PID error
    */
   double TotalError();
+  
+  /**
+   Guanyang Luo
+   * Update the PID error and calculate the control value.
+   * @param cte The current cross track error
+   */
+  double Control(double cte);
 
  private:
   /**
